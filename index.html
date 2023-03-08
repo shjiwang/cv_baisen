@@ -3,205 +3,106 @@
     <head>
         <meta charset="UTF-8">
         <title>Baisen Cong's Personal Website</title>
-        <style>
-            body {
-                background-color: #eaf0f0;
-            }
-
-            hr {
-                border-style:dotted none none;
-                border-color: white;
-                border-width: 7px;
-                width: 20%;
-                margin-top: 3%;
-            }
-
-        </style>
-    
+        <link rel="stylesheet" href="CSS/styles.css">
     </head>
     <body>
         <h1>Baisen Cong</h1>
-        <p>Flat 502, Block 3, 533 Gaotai Ave, Shanghai, China, +86-15608310666, cbsalvin@hotmail.com</p>
-        <p>www.linkedin.com/in/baisencong</p>
-        <div>
-        <h2>Education</h2>
-        <table>
-            <tr>
-                <td><b>Northwestern University:</b>McCormick School of Engineering & Applied Science</td>
-                <td class="date">Dec. 2016</td>
-            </tr>
-            <tr>
-                <td>Master of Science, <b>Engineering Science and Applied Mathematics</b>, GPA: 3.48/4.0</td>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <tr>
-                <td><b>Hong Kong University of Science and Technology: </b>School of Engineering</td>
-                <td class="date">June 2011</td>
-            </tr>
-            <tr>
-                <td>Master of Engineering, <b>Electronic Engineering</b>, GPA: 3.93/4.0</td>
-            </tr>
-        </table>
-        <br>
-        <table>
-            <tr>
-                <td><b>City University of Hong Kong: </b>School of Engineering</td>
-                <td class="date">June 2010</td>
-            </tr>
-            <tr>
-                <td>Bachelor of Engineering, <b>Electronic Engineering</b>, 2006-2010 City University Mainland Student Scholarship</td>
-            </tr>
-        </table>
-        </div>
-        <hr>
+        <p class="contact">Flat 502, Block 3, 533 Gaotai Ave, Shanghai, China, +86-15608310666, cbsalvin@hotmail.com</p>
+        <p class="contact">www.linkedin.com/in/baisencong</p>
+        <hr>  
         <div>
         <h2>Work Experience</h2>
         <br>
-        <table>
-            <tr>
-                <th>Data Scientist, Danaher (Fortune 500), Shanghai, China</th>
-                <th class="date">May 2021-Present</th>
-            </tr>
-        </table>
-            <ul>
-                <li>Proposed and developed sepsis alert model with a classifier combining SVM, Logistics Regression and XGBoost to achieve Receiver 
-                    Operating Characteristic (ROC) area of 0.83 in one of China Top 3 Infectious Department.</li>
-                <li>Fine-tuned Light Weight Version Transformer (MobileViT) model to detect Tuberculosis (TB) lesion on chest routine CT scan 
-                    and productized the it achieving 99% recall and 84.2% precision in multi-site pilot validation.</li>
-                <li>Applied multi-head attention mechanism on SMILES character of drug molecule and the protein molecule to explore the 
-                    effectiveness and side effect of antimicrobials, and scout the possible investigation topic on the connections between 
-                    microbial’s gene mutation and possible drug tolerance ability. </li>
-                <li>Created a body acid-base balance analyze system in Flask web framework by integrating blood gas analysis algorithm 
-                    with best practice from Peking Union Medical College Hospital ICU department and deployed on Radiometer’s (Danaher brand) 
-                    blood gas machine as ABL and AQT series.</li>
+        <h3 class="header">Data Scientist, Danaher (Fortune 500), Shanghai, China</h3>
+        <h3 class="date">May 2021-Present</h3>
+        <ul>
+            <li>Developed and implemented a sepsis alert model for one of China's top hospitals, utilizing SVM, Logistic Regression, 
+                and XGBoost classifiers. Achieved an ROC area of 0.83, resulting in an 8% reduction in sepsis mortality rates and 
+                contributing to improved patient outcomes.</li>
+            <li>Optimized and deployed a Light Weight Version Transformer model for tuberculosis lesion detection on chest 
+                routine CT scans. Validated through a multi-site pilot study, achieving 96.0% recall and 70.0% precision. </li>
+            <li>Applied multi-head attention mechanism to analyze the effectiveness and side effects of antimicrobials, and explore
+                 possible connections between microbial gene mutations and drug tolerance abilities.</li>
+            <li>Created and deployed a body acid-base balance analysis system by integrating blood gas analysis algorithms with 
+                best practices from Peking Union Medical College Hospital ICU department. </li>
+            <li>Coordinated cross-functional teams to successfully deploy the Blood Gas Interpretation system on Radiometer's 
+                (Danaher brand) blood gas machines as ABL and AQT series.</li>
             </ul>
-        
-        <table>
-            <tr>
-                <th>Data Scientist, Philips, Shanghai, China</th>
-                <th class="date">Feb 2020-May 2021</th>
-            </tr>
-        </table>
+        <br>
+        <h3 class="header">Data Scientist, Philips, Shanghai, China</h3>
+        <h3 class="date">Feb 2020-May 2021</h3>
         <ul>
-            <li>Designed and lead a clinical research project to estimate the length of stay for post Percutaneous Coronary Intervention
-                         (PCI) patients with a classifier by integrating machine learning (XGBoost, GradientBoost, RandomForest) and deep learning 
-                         (multi-head attention with AlexNet) models to achieve ROC area of 0.76.</li>
-            <li>Utilized SQL to extract and analyze 2,000,000,000+ CT log files in China from Vertica Database and acquired 8M USD
-                         funding for Remote Proactive Localization Project with solid business model of estimated profits.</li>
-            <li>Constructed an application scenario for Philips Global Cardiology Department Operation Improvement Program with the BERT
-                         model fine-tuned by MIMIC public database to extract useful semantic information on client’s Electronic Medical Record (EMR).
-            </li>
+            <li>Led and designed a clinical research project to estimate post-percutaneous coronary intervention patients' length
+                 of stay using a combination of machine learning (XGBoost, GradientBoost, RandomForest) and deep learning (multi-head 
+                 attention with AlexNet) models, achieving an ROC area of 0.76. </li>
+            <li>Extracted and analyzed over 2 billion CT log files from a Vertica Database in China using SQL and applied Pandas to 
+                generate business insights based on the data.</li>
+            <li>Conducted data analysis on customer behavior with Seaborn and Plotly to secure 8 million USD funding for the Remote 
+                Proactive Localization Project with a sound business model and projected profits. </li>
+            <li>Developed a BERT model application scenario for Philips Global Cardiology Department's Operation Improvement Program,
+                 fine-tuned with MIMIC public database to extract valuable semantic information from clients' Electronic Medical Records (EMR).</li>
         </ul>
-        <table>
-            <tr>
-                <th>Data Scientist, Philips, Shanghai, China</th>
-                <th class="date">Feb 2020-May 2021</th>
-            </tr>
-        </table>
+        <br>
+        <h3 class="header">Data Scientist, PingAn (Global 500) Medical & Healthcare, Shanghai, China</h3>
+        <h3 class="date">Feb 2018-Jan 2020</h3>
         <ul>
-            <li>Designed and lead a clinical research project to estimate the length of stay for post Percutaneous Coronary Intervention
-                (PCI) patients with a classifier by integrating machine learning (XGBoost, GradientBoost, RandomForest) and deep learning 
-                (multi-head attention with AlexNet) models to achieve ROC area of 0.76.</li>
-            <li>Utilized SQL to extract and analyze 2,000,000,000+ CT log files in China from Vertica Database and acquired 8M USD
-                funding for Remote Proactive Localization Project with solid business model of estimated profits.</li>
-            <li>Constructed an application scenario for Philips Global Cardiology Department Operation Improvement Program with the BERT
-                model fine-tuned by MIMIC public database to extract useful semantic information on client’s Electronic Medical Record (EMR).
-             </li>
+            <li>Developed the PingAn Health Risk Prediction Model (HRPM), achieving an ROC area up to 0.81 by combining SVM, XGBoost,
+                 and a self-invented 3D-pattern feature extraction method with AlexNet.</li>
+            <li>Secured transaction of 7M+ USD from an insurance partner, based on an estimated revenue projection using actuarial 
+                principles for a proposed business model incorporating HRPM.</li>
+            <li>Packed and deployed the HRPM in a pickle file on the product delivery server with a special input API running inside 
+                GNU C compile (GCC) to avoid unexpected input error for the model. Achieved 3000+ monthly calls of HRPM in a production environment 
+                without error output. </li>
         </ul>
-        <table>
-            <tr>
-                <th>Data Scientist, PingAn (Global 500) Medical & Healthcare, Shanghai, China</th>
-                <th class="date">Feb 2018-Jan 2020</th>
-            </tr>
-        </table>
+        <br>
+        <h3 class="header">Validation Engineer, Sierra Wireless, Hong Kong SAR</h3>
+        <h3 class="date">Jan. 2012-Oct. 2013</h3>
         <ul>
-            <li>Created PingAn Health Risk Prediction Model (HRPM) with combination of SVM, XGBoost and special self-invented 3D-pattern feature extraction method plus AlexNet to achieve ROC area up to 0.81 and secured 
-                transaction from the insurance partner with estimated revenue based on actuary theory.</li>
-            <li>Packed and deployed HRPM in pickle file on product delivery server with a special input API running inside 
-                GNU C compile (GCC)to avoid unexpected input error for the model and achieved 3000+ monthly call of HRPM 
-                in production environment without error output. </li>
-            <li>Masterminded South China Diabetes Progress Condition Model by simulating Monte Carlo Markov Chain 
-                (MCMC) process with Gillespie algorithm based on medical records of 30,000,000 people in 5-year time.</li>
-        </ul>
-
-        <table>
-            <tr>
-                <th>Validation Engineer, Sierra Wireless, Hong Kong SAR</th>
-                <th class="date">Jan. 2012-Oct. 2013</th>
-            </tr>
-        </table>
-        <ul>
-            <li>Developed and enhanced independently 300+ convoluted validation scripts in C programing, resulting in 
-                elevated efficiency of 40%.</li>
-            <li>Collaborated with a five-member team in compiling 1000+ validation scripts into automatic system that enhances
-                the productivity five times. </li>
-            <li>Created 50 manual test cases in Security Socket Layer by self-study and migrated them into automatic scripts.</li>
+            <li>Developed and enhanced 300+ validation scripts in C programming, resulting in a 40% efficiency improvement.</li>
+            <li>Collaborated with a team of five to compile 1000+ validation scripts into an automatic system, increasing productivity by five times. </li>
+            <li>Self-studied and created 50 manual test cases in Security Socket Layer, which were then migrated into automatic scripts.</li>
         </ul>
         </div>
+
         <hr>
     <div>
         <h2>Professional Experience</h2>
         <br>
-        <table>
-            <tr>
-                <th>AI aid CT scan result TB early screening model, Danaher</th>
-                <th class="date">Oct 2021-Now</th>
-            </tr>
-        </table>
-            <ul>
-                <li>Object Detection Model and Productization:
-                    <ul>
-                        <li>Invented a special object detection model with vision transformer to fetch the chest related data from 
-                            DICOM file and automatically transfer the target data into PNG file on pulmonary window view.</li>
-                        <li>Reformed a light version of vision transformer (MobileViT) with domain adversarial model trained by 
-                        datasets of public open data and hospital acquired cases to achieve 99% recall and 84.2% precision in 
-                        multi-site pilot validation.</li>
-                        <li>Integrated the model into a software deployed in hospital respiratory department with Web API format 
-                            by presenting the suspected TB lesion images in both pulmonary and mediastinal window.</li>
-                    </ul>
-                </li>    
-                <li>Semantic Segmentation Model and Multimodal Fusion:
-                    <ul>
-                        <li>Explored methods to improve the performance of vision transformer on small dataset to generate a model 
-                            with Convolution Neural Network and self-attention mechanism for semantic segmentation. </li>
-                        <li>Took part in research to apply the multimodal fusion in medical radiology results as MRI DICOM files of 
-                            brain tumor and validate the technical feasibility through public dataset from Medical Data Cloud</li>
-                        <li>Upgraded the TB lesion detection model into a comprehensive deep learning model not only helps to spot
-                            suspect TB lesion but also aids in evaluating the treatment effect applying multimodal fusion on chest 
-                            routine CT scans.</li>
-                    </ul>
-                </li>
-            </ul>
+    
+        <h3 class="header">AI aid CT scan result TB early screening model, Danaher</h3>
+        <h3 class="date">Oct 2021-Now</h3>
+        <ul>
+            <li>Object Detection Model and Productization:
+                <ul>
+                    <li>Developed an object detection model based on Vision Transformer that extracts chest-related data from DICOM files and automatically converts the target image into PNG format on a pulmonary window view. </li>
+                    <li>Optimized a lightweight version of Vision Transformer (MobileViT) using a domain adversarial model trained on publicly available datasets and hospital-acquired cases. Achieved 96.0% recall and 70.0% precision in a multi-site pilot validation study. </li>
+                    <li>o	Collaborated with product management to integrate the tuberculosis (TB) lesion detection model into software and deploy it in several hospitals’ respiratory department. Developed a clinical physician friendly interface to provide the suspected TB lesion report to aid in daily diagnosis activities.</li>
+                </ul>
+            </li>    
+            <li>Semantic Segmentation Model and Multimodal Fusion:
+                <ul>
+                    <li>Developed a U-net shaped model with self-attention mechanism for semantic segmentation to improve the performance of vision transformers on small datasets.</li>
+                    <li>Contributed to research on multimodal fusion in medical radiology, specifically focusing on brain tumor detection using MRI DICOM files.</li>
+                    <li>Upgraded the TB lesion detection model into a comprehensive deep learning system capable of not only detecting suspect TB lesions but also evaluating treatment effectiveness.</li>
+                </ul>
+            </li>
+        </ul>
         <br>    
-        <table>
-            <tr>
-                <th>PingAn Health Risk Prediction Model (HRPM), PingAn Medical & Healthcare</th>
-                <th class="date">June 2018-Feb.2019</th>                  
-            </tr>
-        </table>
+        <h3 class="header">PingAn Health Risk Prediction Model (HRPM), PingAn Medical & Healthcare</h3>
+        <h3 class="date">June 2018-Feb.2019</h3>                  
         <ul>
             <li>Data Extraction and Feature Engineering:
                 <ul>
-                    <li>Collaborated and trimmed data from 800+ to 20+ features with statistical methods by Oracle SQL from 
-                        data lake of 50M+ medical record.</li>
-                    <li>Explore the nonlinear relationship among selected features by overserving the learning curve and ROC 
-                        area of Naïve Bayes, SVM, Linear Regression, RandomForest, GradientBoost, XGBoost in training trail.</li>
-                    <li>Invented a method to formulate the input diagnosis records into a time-series string medical word 
-                        embedding method through word2vec model using Skip-gram algorithm dedicated for Recurrency 
-                        Neural Network (RNN) application.</li>    
+                    <li>Reduced the number of features from 800+ to 20+ through statistical methods using Oracle SQL on a data lake containing over 50 million medical records.</li>
+                    <li>Conducted research to explore the non-linear relationships among the selected features by analyzing the learning curve and ROC area of several machine learning models (Naïve Bayes, SVM, Linear Regression, RandomForest, GradientBoost, XGBoost) during the training trial.</li>
+                    <li>Developed an approach to represent input diagnosis records as time-series medical word embeddings using the Skip-gram algorithm in a word2vec model optimized for Recurrent Neural Network (RNN) applications. This approach was successful in improving the performance of the model.</li>    
                 </ul>
             </li>
             <li>Machine Learning and Deep Learning Model Implementation:
                 <ul>
-                    <li>Prototyped health prediction model to accomplish ROC area of 0.70 that applies stacking method to 
-                        integrate 3 selected models after parameters optimization using grid search method.</li>
-                    <li>Enhanced the model to deep learning model with performance ROC area to 0.81 by combining a AlexNet 
-                        trained by special 3D tailored medical data and a Long Short-term Memory (LSTM) model fed with a 
-                        time-series string data.</li>
-                    <li>Created Health Risk diseases development map by implementing Wasserstein Generative Adversarial 
-                        Networks (WGAN) while taking the improved deep learning model as Discriminative Model.</li>
+                    <li>Prototyped a health prediction model using a stacking method that integrated three selected models. Optimized the model's parameters using grid search and achieved a ROC area of 0.70.</li>
+                    <li>Enhanced the model into a deep learning model by combining an AlexNet trained with 3D medical data and an LSTM model that used time-series string data. Achieved a ROC area of 0.81.</li>
+                    <li>Created a Health Risk diseases development map using Wasserstein Generative Adversarial Networks (WGAN) and the improved deep learning model as a Discriminative Model.</li>
                 </ul>
             </li>
         </ul>            
@@ -210,33 +111,39 @@
     <div>
         <h2>Selected Publications and Patents</h2>
         <ul>
-            <li> Li, Ziyu Wang, Zhiqin Zhu, Xinghua Huang, Guanqiu Qi, Baisen Cong. “X-Net: A Dual Encoding-Decoding Method in Medical Image Segmentation.” Proceedings of the 5th Asian Conference of Artificial
-            Intelligence Technology (ACAIT 2021). Submission: 107. Haikou, China, October 29-31, 2021.</li>
-            <li> Zhu, Zheng Yao, Guanqiu Qi, Neal Mazur, Baisen Cong. Associative Learning Mechanism for Drug-Target Interaction Prediction[J]. arXiv preprint arXiv:2205.15364,2022.</li>
-            <li>Zhiqin Zhu, Xianyu He, Guanqiu Qi, Yuanyuan Li, Baisen Cong, Yu Liu, <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253522001981?via%3Dihub">Brain tumor segmentation based on 
-            the fusion of deep semantics and edge information in multimodal MRI</a>, Information Fusion, 2022, ISSN 1566-
-            2535.</li>
-            <li>Baisen Cong, PingAn Medical and Healthcare (2020). A special storage and presenting format of electronic 
-            medical record in 3D. CN111274305A.</li>
-            <li>Cong, PingAn Medical and Healthcare (2020). Diseases Density Clustering with Computer Version 
-            Application. CN111161880A.</li>
-            <li>Zhiqin Zhu, Yangbo Lei, Baisen Cong, Xiaolei Li, Yuanyuan Li, Zheng Yao, Zhihao Zhou. Abdomen inner 
-            pressure prediction system based on reinforcement learning of dense feature iteration. CN115019957A.</li>
-            <li>Zhu, Zheng Yao, Baisen Cong, Pan Yang, Xiaolei Li, Yuanyuan Li. A miRNA-mRNA target prediction 
-            method based on sequence based learning algorithm. CN114664376A</li>
+            <li>Zhiqin Zhu, Xianyu He, Guanqiu Qi, Yuanyuan Li, Baisen Cong, Yu Liu. <a href="https://doi.org/10.1016/j.inffus.2022.10.022" target="_blank">Brain tumor segmentation based on the fusion of deep semantics and edge information in multimodal MRI</a>, Information Fusion, 2022, ISSN 1566-2535.</li> 
+            <li>Zhiqin Zhu, Zheng Yao, Guanqiu Qi, Neal Mazur, Baisen Cong. <a href="https://doi.org/10.1049/cit2.12194" target="_blank">Associative Learning Mechanism for Drug-Target Interaction Prediction</a>, CAAI Transactions on Intelligence Technology, 28 February 2023.</li>
+            <li>Zhiqin Zhu, Yangbo Lei, Baisen Cong, Xiaolei Li, Yuanyuan Li, Zheng Yao, Zhihao Zhou. Abdomen inner pressure prediction system based on reinforcement learning of dense feature iteration. CN115019957A.</li>
+            <li>Zhiqin Zhu, Zheng Yao, Baisen Cong, Pan Yang, Xiaolei Li, Yuanyuan Li. A miRNA-mRNA target prediction method based on sequence-based learning algorithm. CN114664376A.</li>
         </ul>
     </div>
     <hr>  
     <div>
-        <h2>Skills</h2>
+        <h2>Skills and Language</h2>
         <ul>
-            <li><b>Technologies</b>: Python, Scrum project management, SQL, Computer Version, C++, Matlab, Tableau</li>
-            <li>Tools: PyTorch, Tensorflow, dash, flask, Jupyter Notebook, pandas, numpy, scipy, gensim, opencv, Sklearn</li>
-            <li>Languages: Fluent in English, Mandarin and Cantonese</li>
+            <li>Proficient in machine learning techniques and algorithms, including SVM, Logistic Regression, XGBoost, GradientBoost, RandomForest, CNN, LSTM and self-attention mechanisms.</li>
+            <li>Experienced in deep learning frameworks such as TensorFlow, Keras, and PyTorch.</li>
+            <li>Skilled in data processing like Python, SQL, Pandas, Plotly, Numpy and software applications using Flask web framework.</li>
+            <li>Fluent in English, Cantonese and Mandarin Chinese.</li>
         </ul>
     </div>
-    <hr>    
+    <hr>
+    <div>
+    <h2>Education</h2>
+        <h3 class="header"><b>Northwestern University: </b>McCormick School of Engineering & Applied Science</h3>
+        <h3 class="date">Dec. 2016</h3>
+        <p>Master of Science, <em>Engineering Science and Applied Mathematics</em>, GPA: 3.48/4.0</p>            
+        <br>
+
+        <h3 class="header"><b>Hong Kong University of Science and Technology: </b>School of Engineering</h3>
+        <h3 class="date">June 2011</h3>
+        <p>Master of Engineering, <em>Electronic Engineering</em>, GPA: 3.93/4.0</p> 
+        <br>
+
+        <h3 class="header"><b>City University of Hong Kong: </b>School of Engineering</h3>
+        <h3 class="date">June 2010</h3>
+        <p>Bachelor of Engineering, <em>Electronic Engineering</em>,  2006-2010 City University Mainland Student Scholarship</p> 
+    </div>  
                     
-            
     </body>
 </html>

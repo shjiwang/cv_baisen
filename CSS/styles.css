@@ -1,0 +1,55 @@
+body {
+    background-color: #FFFBEB;
+    padding: 3% 10%;
+    line-height: 20px;
+}
+
+hr {
+    border-style:dotted none none;
+    border-color: #495579;
+    border-width: 7px;
+    width: 20%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+h1 {
+    text-align: center;
+    color: #263159;
+}
+
+h2 {
+    color: #263159;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+h3 {
+    display: inline-block;
+}
+
+p {
+    font-size: 17px;
+    margin-top: 0px;
+}
+
+li {
+    line-height: 40px;
+    font-size: 17px;
+}
+
+.date {
+    text-align: left;
+    width: 15%;
+    font-size: 18px;
+}
+
+.header {
+    font-size: 18px;
+    text-align: left;
+    width: 80%;
+}
+
+.contact {
+    text-align: center;
+}
